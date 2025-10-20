@@ -8,10 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const ResponseSchema = new mongoose.Schema({
-  usoCelularAntesDormir: Boolean,
-  dificultadSinRedes: Boolean,
-  celularMientrasComida: Boolean,
-  distraeCelularTrabajo: Boolean,
+  responses : Object,
   prediction: String,
   score: Number,
   timestamp: Date
